@@ -38,8 +38,8 @@ public class AnimatorA2Fragment extends Fragment {
 
         setEnterTransition(slide);
         setExitTransition(slide);
-        setReenterTransition( explode );
-        setReturnTransition( explode );
+//        setReenterTransition( explode );
+//        setReturnTransition( explode );
     }
 
     @Override
