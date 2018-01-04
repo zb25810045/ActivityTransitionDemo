@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.bloodcrown.translationanimationtest"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".TweenAnimationActivity">
+        </activity>
+        <activity android:name=".transition.MDAnimationActivity">
+        </activity>
+        <activity android:name=".transition.ExplodeTransitionActivity">
+        </activity>
+        <activity android:name=".transition.SlideTransitionActivity">
+        </activity>
+        <activity android:name=".transition.FadeTransitionActivity">
+        </activity>
+        <activity android:name=".transition.ShadeTransitionActivity">
+        </activity>
+        <activity android:name=".fragment.FragmentAnimatorByReplaceActivity">
+        </activity>
+        <activity android:name=".fragment.FragmentAnimatorByShowHintActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityTransitionAnimatoin</item>
+    </style>
+
+    <!-- 给 window 添加动画，只能作用于 B 页面，也有些需求是只做 B 页面动画的,window动画的级别高activity -->
+    <!--<item name="android:windowEnterAnimation">@anim/translate_top_in</item>-->
+    <!--<item name="android:windowExitAnimation">@anim/translate_buttom_out</item>-->
+
+    <style name="ActivityTransitionAnimatoin" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/translate_top_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/translate_buttom_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/translate_buttom_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/translate_top_out</item>
+    </style>
+
+</resources>
